@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young life gallery</title>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+</head>
+<body>
+    <style>
+      .logo{
+    max-width:200px;
+        }
+       /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+      body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+     /* Header Styling */
+    header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+                 } 
+        .container {
+            background: linear-gradient(135deg, #fda085 #f6d365, #fda085, #fda085, #f6d365);
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+    /* Responsive Design */
+@media (max-width: 768px) {
+        .hero {
+            font-size: 24px;
+            height: 200px;
+        }
+
+        header {
+            font-size: 20px;
+        }
+ }
+ @media screen and(max-width:800px) {
+    .column{
+        -ms-flex:50%;    
+        flex:50%;
+        max-width: 50%;
+        }
+        
+    
+ }
+ @media  screen and(max-width:600px) {
+    .column{
+        -ms-flex:100%;   
+        flex:100%;
+        max-width: 100%;
+        }
+        
+    
+ }
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color:  #005f73;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    /* Gallery Container */
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    /* Gallery Items */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    /* Overlay Caption */
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .overlay {
+        font-size: 1rem;
+      }
+    }
+</style>
+   
+<header> 
+  <div class="logoheader">
+      <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+  </div>
+  <div class="headercontainer">
+
+  <a href="success.html" class="headerbutton">Success Stories</a>
+  <a href="contact.html" class="headerbutton">Contact Us</a>
+  <a href="gallery.html" class="headerbutton">Gallery</a>
+</div>
+  <div>
+  <a href="howyoucanhelp.html" class="button">Get Involved</a>
+  </div>
+
+</header>
+
+<h1>Our Gallery</h1>
+<div class="gallery-container">
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="src/image2.jpeg" alt="Gallery Image 1">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image24.jpeg" alt="Gallery Image 3">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image75.jpeg" alt="Gallery Image 4">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image58.jpg" alt="Gallery Image 5">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image8.jpeg" alt="Gallery Image 8">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image53.jpg" alt="Gallery Image 9">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image52.jpg" alt="Gallery Image 10">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image11.jpeg" alt="Gallery Image 11">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image12.jpeg" alt="Gallery Image 12">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image13.jpeg" alt="Gallery Image 13">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image14.jpeg" alt="Gallery Image 14">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image10.jpeg" alt="Gallery Image 15">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image16.jpg" alt="Gallery Image 16">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image17.jpg" alt="Gallery Image 17">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image30.jpg" alt="Gallery Image 18">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image19.jpg" alt="Gallery Image 19">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image24.jpeg" alt="Gallery Image 24">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image83.jpeg" alt="Gallery Image 25">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image86.jpeg" alt="Gallery Image 26">
+      <div class="overlay"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="src/image28.jpeg" alt="Gallery Image 27">
+      <div class="overlay"></div>
+    </div>
+
+      <div class="gallery-item">
+        <img src="src/image35.jpg" alt="Gallery Image 31">
+        <div class="overlay"></div>
+      </div>
+        <div class="gallery-item">
+          <img src="src/image36.jpg" alt="Gallery Image 31">
+          <div class="overlay"></div>
+        </div>
+    <div class="gallery-item">
+      <img src="src/image37.jpg" alt="Gallery Image 31">
+      <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image38.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image15.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image40.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image41.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image42.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image43.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image44.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image45.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image46.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image54.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image48.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image49.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image50.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image60.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image47.jpg"alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image59.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+  <div class="gallery-item">
+    <img src="src/image58.jpg" alt="Gallery Image 31">
+    <div class="overlay"></div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <p>Contact Us | Email: younglifechildrenshome@gmail.com | Phone: +254 722785211 | Phone: +254 728634258 </p>
+  <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+  <p>P.O Box 678-00100</p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+<a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
+<a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+<a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+    <p>&copy; 2003 Young Life Childrens Home. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

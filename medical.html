@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Younglife Well-Being</title>
+  <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+  <style>
+         .logo{
+    max-width:200px;
+        }
+ 
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+          }
+        .container {
+            background: linear-gradient(135deg, #fda085 #f6d365, #fda085, #fda085, #f6d365);
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+    .title {
+      background: #005f73;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+    .header h1 {
+      margin-bottom: 10px;
+    }
+    /* Content Layout */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+    }
+    .text {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .text p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .image {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    /* Budget Breakdown */
+    .budget {
+      margin: 20px;
+      padding: 20px;
+      background: #eaf6f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .budget h2 {
+      text-align: center;
+      color: #005f73;
+    }
+    .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .budget-table th, .budget-table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .budget-table th {
+      background: #005f73;
+      color: #fff;
+    }
+    .budget-table tr:last-child td {
+      font-weight: bold;
+      background: #f4f4f4;
+    }
+    .donate {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .donate a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff4500;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;          
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .donate a:hover {
+      background: #cc3700;
+    }
+    .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+      .text, .image {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<header> 
+    <div class="logoheader">
+        <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+    </div>
+    <div class="headercontainer">
+
+    <a href="success.html" class="headerbutton">Success Stories</a>
+    <a href="contact.html" class="headerbutton">Contact Us</a>
+    <a href="gallery.html" class="headerbutton">Gallery</a>
+</div>
+    <div>
+    <a href="howyoucanhelp.html" class="button">Get Involved</a>
+    </div>
+
+</header>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Younglife's Well-Being</h1>
+      <p>Your support ensures a healthy, dignified life for our children.</p>
+    </div>
+    <div class="content">
+      <div class="text">
+        <p>At our children's home, every meal, every piece of clothing, and every medical bill matters. 
+        With your help, we ensure that these children have access to a **balanced diet, proper healthcare, and a clean environment** to thrive in. 
+        But, we can't do it alone.</p>
+        <p>Your donations directly impact their well-being, allowing us to provide food, clothing, medical care, and essential services like cleaners and gardeners.</p>
+        <p>Take a look at how we allocate our budget, and see how your generosity can make a tangible difference.</p>
+      </div>
+      <div class="image">
+        <img src="src/image71.jpg" alt="Children at the home">
+      </div>
+    </div>
+    <div class="budget">
+      <h2>Anual Budget Breakdown</h2>
+      <table class="budget-table">
+        <tr>
+          <th>Category</th>
+          <th>Amount (USD)</th>         
+        </tr>
+           <tr>
+          <td>Education</td>
+          <td>$40,000</td>
+        </tr>
+     </tr>
+     <tr>
+      <td>Clothing & Footwear</td>
+      <td>$14400</td>
+    </tr>
+        <tr>
+          <td>Clothing & Footwear</td>
+          <td>$14400</td>
+        </tr>
+        <tr>
+          <td>Medical Insurance</td>
+          <td>$36,000</td>
+        </tr>
+        <tr>
+          <td>Service Providers (Cleaners, Gardeners, etc.)</td>
+          <td>$13000</td>
+        </tr>    
+        <tr>
+          <td>Toiletries & Hygiene</td>
+          <td>$9000</td>
+        </tr>
+        <tr>
+          <td>Total Anual Expenses</td>
+          <td>$126,800 Approx</td>
+        </tr>
+      </table>
+    </div>
+    <div class="donate">
+      <p>**Join us in making a difference today!**</p>
+      <a href="howyoucanhelp.html">Get Involved</a>
+    </div>
+  </div>
+  <footer>
+    <p>Contact Us | Email: younglifechildrenshome@gmail.com | Phone: +254 722785211 | Phone: +254 728634258 </p>
+    <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+    <p>P.O Box 678-00100</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+      <a href="https://www.facebook.com/YLAfrica/" target="_blank"><img src="src/facebook.png" alt="Facebook" width="30"></a>
+      <a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+      <a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+    </div>
+</footer>
+</body>
+</html>
+  

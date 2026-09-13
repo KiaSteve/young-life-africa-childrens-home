@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Younglife Education</title>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+</head>
+<body>
+    <style>
+               .logo{
+    max-width:200px;
+        }
+
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+
+        /* Header Styling */
+        header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+            }
+   
+   
+
+    .container {
+        padding: 20px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      color: #005f73;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .content .image,
+    .content .text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .content .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .text h2 {
+      color: #005f73;
+      margin-bottom: 15px;
+    }
+    .text p {
+      margin-bottom: 15px;
+    }
+    .location {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e0fbfc;
+      border-left: 5px solid #005f73;
+    }
+    .location p {
+      font-weight: 600;
+    }
+    .details {
+      margin-top: 20px;
+    }
+    .details h3 {
+      color: #005f73;
+      margin-bottom: 10px;
+    }
+    .budget {
+      margin: 20px;
+      padding: 20px;
+      background: #eaf6f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .budget h2 {
+      text-align: center;
+      color: #005f73;
+    }
+    .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .budget-table th, .budget-table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .budget-table th {
+      background: #005f73;
+      color: #fff;
+    }
+    .budget-table tr:last-child td {
+      font-weight: bold;
+      background: #f4f4f4;
+    }
+    
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero {
+            font-size: 24px;
+            height: 200px;
+        }
+
+        header {
+            font-size: 20px;
+        }
+    }
+</style>
+   
+<header> 
+  <div class="logoheader">
+      <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+  </div>
+  <div class="headercontainer">
+
+  <a href="success.html" class="headerbutton">Success Stories</a>
+  <a href="contact.html" class="headerbutton">Contact Us</a>
+  <a href="gallery.html" class="headerbutton">Gallery</a>
+</div>
+  <div>
+  <a href="howyoucanhelp.html" class="button">Get Involved</a>
+  </div>
+
+</header><div class="container">
+    <div class="header">
+      <h1>Build a School, Build a Future</h1>
+      <p>Join us in our mission to provide quality education for every child.</p>
+    </div>
+    <div class="content">
+      <div class="image">
+        <img src="src/image38.jpg" alt="School Project">
+      </div>
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>We are embarking on a transformative journey to construct a state-of-the-art school. This project will offer modern classrooms, science and computer labs, and a vibrant library that inspires learning and growth.</p>
+        <div class="location">
+          <p><strong>Location:</strong> Ruiru, Kiambu, Kenya</p>
+        </div>
+        <div class="details">
+          <h3>Project Details</h3>
+          <p>The new school will not only provide quality education but also create a nurturing environment for our future leaders. With spacious classrooms, innovative learning spaces, and dedicated teachers, we aim to spark creativity and academic excellence.</p>
+          <p>We kindly appeal to donors to support the construction of a school within our children’s home, a transformative project aimed at reducing the high costs of external education while ensuring quality, consistent learning for the children under our care. Establishing an on-site school will not only provide a stable and nurturing environment for our children but also extend educational opportunities to vulnerable children in the surrounding community, fostering long-term social and economic impact. By investing in this initiative, donors will help us create a self-sustaining model that promotes education, empowerment, and community upliftment.</p>            
+            Your contribution, no matter the size, will make a lasting difference.
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="budget">
+    <h2>Project Budget Breakdown</h2>
+    <table class="budget-table">
+      <tr>
+        <th>Category</th>
+        <th>Amount (USD)</th>         
+      </tr>
+         <tr>
+        <td>Phase One</td>
+        <td>$160,000</td>
+      </tr>
+   </tr>
+   <tr>
+    <td>Phase Two</td>
+    <td>$90000</td>
+  </tr>
+      <tr>
+        <td>Phase Three</td>
+        <td>$40000</td>
+      </tr>
+        <td>Total Project Expenses</td>
+        <td>$290,000 Approx</td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    <p>Contact Us | Email: younglifechildrenshome@gmail.com | Phone: +254 722785211 | Phone: +254 728634258 </p>
+    <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+    <p>P.O Box 678-00100</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+<a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
+<a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+<a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+      <p>&copy; 2003 Young Life Childrens Home. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

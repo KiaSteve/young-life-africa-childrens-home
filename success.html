@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Stories</title>
+  <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+  <style>
+    /* Global Styles */
+    .logo{
+    max-width:200px;
+        }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+
+    .container2 {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+            }
+    .title {
+      background: #005f73;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+    .header h1 {
+      margin-bottom: 10px;
+    }
+    /* Grid Layout for Stories */
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .story {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .story img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .story h3 {
+      margin: 10px 0;
+      color: #005f73;
+    }
+    .story p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    /* Footer */
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .stories {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<header> 
+    <div class="logoheader">
+      <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+    </div>
+    <div class="headercontainer">
+
+    <a href="success.html" class="headerbutton">Success Stories</a>
+    <a href="contact.html" class="headerbutton">Contact Us</a>
+    <a href="gallery.html" class="headerbutton">Gallery</a>
+</div>
+    <div>
+    <a href="howyoucanhelp.html" class="button">Get Involved</a>
+    </div>
+
+</header>
+<body>
+  <div class="container2">
+    <div class="title">
+      <h1>Success Stories</h1>
+      <p>Meet the incredible individuals whose lives have been transformed.</p>
+    </div>
+    <div class="stories">
+      <div class="story">
+        <img src="src/image61.jpeg" alt="Success Story 1">
+        <h3>Peterson Kariuki</h3>
+        <p>Once struggling, Peterson is now a successful insurance broker, serving at Jubilee insurance company and giving back to the community.</p>
+      </div>
+      <div class="story">
+        <img src="src/image82.jpeg" alt="Success Story 2">
+        <h3>Jackson Murege</h3>
+        <p>Jackson overcame adversity and  now has his own property and and is entrusted to manage that of many others.He now has hes own family that he active participates in their well-being</p>
+      </div>
+      <div class="story">
+        <img src="src/image78.jpeg" alt="Success Story 3">
+        <h3>Michael Mburu</h3>
+        <p>Once in a situation Michael overcame all odds and made a leaving for himself.He is currently working in the Saudi Arabia for the Saudi Princes as a Milk vendor and distributor.</p>
+      </div>
+      <div class="story">
+        <img src="src/image87.jpg" alt="Success Story 3">
+        <h3>Samuel Mbatia</h3>
+        <p>Samuel has gotten support from Younglife Africa to setup and esstablish a furniture business while gives back to the ophanage and has created job opportunity for the boys from Younglife Africa. </p>
+      </div>
+      <div class="story">
+        <img src="src/image81.jpeg" alt="Success Story 3">
+        <h3>Steven Kariuki</h3>
+        <p>Steven, a brilliant artist and  even better scholar.The young man is a top scoring student whos talent was recognised by on of the most prestigious sponorship programs in the counrty,Wings to fly by Equity bank, that got him through hes highschool education.He is currently chasing a scholarship to finance his pursit for his Compuetr science dregree in a global recognised institution</p>   </p>
+      </div>
+      <div class="story">
+        <img src="src/image33.jpeg" alt="Success Story 3">
+        <h3>Isaac Mathenge</h3>
+        <p>Isaac's resilience led him to become a Chef at a major hotel after his skill and talent was recognised and appreciated as much as the kids did at the home.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Contact Us | Email: younglifechildrenshome@gmail.com | Phone: +254 722785211 | Phone: +254 728634258 </p>
+    <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+    <p>P.O Box 678-00100</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+      <a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
+      <a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+      <a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+    </div>
+</footer>
+  <script>
+    // Animation Effect: Fade-in on Scroll
+    document.addEventListener("DOMContentLoaded", function () {
+      const stories = document.querySelectorAll(".story");
+      const options = { threshold: 0.3 };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, options);
+
+      stories.forEach(story => observer.observe(story));
+    });
+  </script>
+</body>
+</html>

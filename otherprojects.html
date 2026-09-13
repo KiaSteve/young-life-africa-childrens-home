@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects</title>
+  <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+  <style>
+    /* Global Styles */
+    .logo{
+    max-width:200px;
+        }
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+        }
+        body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+     
+    .header {
+      background: #005f73;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+    .header h1 {
+      margin-bottom: 10px;
+    }
+    /* Project Layout */
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #eaf6f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .project-text {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .project-text h2 {
+      color: #005f73;
+    }
+    .project-text p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .project-image {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    /* Budget Breakdown */
+    .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .budget-table th, .budget-table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .budget-table th {
+      background: #005f73;
+      color: #fff;
+    }
+    .budget-table tr:last-child td {
+      font-weight: bold;
+      background: #f4f4f4;
+    }
+    .donate {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .donate a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff4500;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .donate a:hover {
+      background: #cc3700;
+    }
+    .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+
+    footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+      }
+      .project-text, .project-image {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<header> 
+    <div class="logoheader">
+        <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+    </div>
+    <div class="headercontainer">
+
+    <a href="success.html" class="headerbutton">Success Stories</a>
+    <a href="contact.html" class="headerbutton">Contact Us</a>
+    <a href="gallery.html" class="headerbutton">Gallery</a>
+</div>
+    <div>
+    <a href="howyoucanhelp.html" class="button">Get Involved</a>
+    </div>
+
+</header>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Our Projects</h1>
+      <p>Improving the lives of children through essential infrastructure projects.</p>
+    </div>
+
+    <!-- Project 1: Building the Toilets -->
+    <div class="project">
+      <div class="project-text">
+        <h2>Building the  outdoor Toilets</h2>
+        <p>Our children's home currently lacks enough hygienic restroom facilities. Poor sanitation leads to health risks, and our mission is to build **modern, clean, and safe toilets** for the children.</p>
+        <p>This project will significantly **reduce illnesses, enhance hygiene, and improve the quality of life** for the kids. **Your support will directly impact their health and well-being!**</p>
+        <h3>Budget Breakdown:</h3>
+        <table class="budget-table">
+          <tr>
+            <th>Item</th>
+            <th>Amount (USD)</th>
+          </tr>
+          <tr>
+            <td>Construction Materials</td>
+            <td>$3,000</td>
+          </tr>
+          <tr>
+            <td>Labor & Installation</td>
+            <td>$2,500</td>
+          </tr>
+          <tr>
+            <td>Plumbing & Sewage</td>
+            <td>$1,500</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$7,000 Approx</td>
+          </tr>
+        </table>
+      </div>
+      <div class="project-image">
+        <img src="src/image28.jpeg" alt="Toilet construction project">
+      </div>
+    </div>
+
+    <!-- Project 2: Renovating the Dorm -->
+    <div class="project">
+      <div class="project-image">
+        <img src="src/image76.jpeg" alt="Dorm renovation project">
+      </div>
+      <div class="project-text">
+        <h2>Renovating the Dorm</h2>
+        <p>The dormitories are old and **in desperate need of renovation**. Broken beds, leaking roofs, and overcrowding have made life uncomfortable for the children.</p>
+        <p>This renovation project will **provide the kids with a safe, comfortable, and welcoming living space**. A proper dorm fosters better sleep, learning, and emotional well-being.</p>
+        <h3>Budget Breakdown:</h3>
+        <table class="budget-table">
+          <tr>
+            <th>Item</th>
+            <th>Amount (USD)</th>
+          </tr>
+          <tr>
+            <td>New Bunk Beds & Mattresses</td>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <td>Roof Repair</td>
+            <td>$3,000</td>
+          </tr>
+          <tr>
+            <td>Painting & Renovation</td>
+            <td>$2,000</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$9,000 Approx</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h2>Enclosed  football pitch (turf)</h2>
+    <p>We are seeking support to build a morden enclosed turf football pitch within our children home to provide a safe, all-weather space for physical activity, personal development, and talent nurturing. Football plays a vital role in shaping discipline, teamwork, and resilience among children, offering a constructive outlet for energy and emotion. This facility will not only benefit the children in our care but also serve as a community hub, promoting unity and youth engagement through sports. With your support, we can create an environment that inspires growth, strengthens health, and opens doors to future opportunities both on and off the pitch.</p>
+     <p> This is aimed in increasing community involvement in the name of exposing the children to the community</p>
+        <h3>Budget Breakdown:</h3>
+        <table class="budget-table">
+          <tr>
+            <th>Item</th>
+            <th>Amount (USD)</th>
+          </tr>
+          <tr>
+            <td>Construction</td>
+            <td>$80,000</td>
+          </tr>
+          <tr>
+            <td>labour</td>
+            <td>$6,000</td>
+          </tr>
+      <td>Total</td>
+            <td>$86,000 Approx</td>
+          </tr>
+        </table>
+      </div>
+      <div class="project-image">
+        <img src="src/image67.jpg" alt="Toilet construction project">
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-image">
+        <img src="src/image29.jpeg" alt="Dorm renovation project">
+      </div>
+      <div class="project-text">
+        <h2>Agriculture </h2>
+        <p>We are seeking support to expand our agricultural program, which currently includes 10 goats, 100 chickens(layers), 6 turkeys, 15 Ducks, 5 Geese, 80 Pigeons, two fish ponds that hold catfish and 100 Rabbits, all of which play a key role in providing food, income, and hands-on learning for the children. To further strengthen this initiative, we aim to add three cows, one bull, sheep, and construct a proper cowshed to ensure the animals’ health and productivity. This expansion will not only boost our food sustainability but also equip the children with valuable agricultural skills, promote responsibility, and reduce dependency on external food sources. Your support will directly empower us to grow a more self-reliant, educational, and nourishing environment.</p>
+        <table class="budget-table">
+          <tr>
+            <th>Item</th>
+            <th>Amount (USD)</th>
+          </tr>
+          <tr>
+            <td>Cows </td>
+            <td>$6,000</td>
+          </tr>
+          <tr>
+            <td>Bulls</td>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <td>Sheeps </td>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <tr>
+              <td>Cow Shade</td>
+              <td>$5,000</td>
+            </tr>
+            <td>Total</td>
+            <td>$19,000 Approx</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h2>Community feeding project</h2>
+        <p>Our director, Tony Kamande, has been at the heart of our community outreach, leading a dedicated feeding program that provides nutritious meals to vulnerable families and children in the surrounding area. His hands-on involvement—personally organizing food drives, engaging with local residents, and ensuring that no one is left behind—reflects his deep commitment to uplifting the community. Tony’s leadership goes beyond administration; he is often seen on the ground, serving meals, listening to stories, and offering encouragement. His passion and active presence have inspired many, making the feeding program not just a service, but a beacon of hope and unity for those who need it most.</p>
+      </div>
+        <div class="project-image">
+          <img src="src/Image72.jpeg" alt="Toilet construction project">
+        </div>
+      </div>
+    </div>
+
+    <div class="donate">
+      <p>Join us in making a lasting impact. Every donation brings us closer to our goal!</p>
+      <a href="howyoucanhelp.html">Get Involved</a>
+    </div>
+  </div>
+  <footer>
+    <footer>
+        <p>Contact Us | Email: younglifechildrenshome@gmail.com | Phone: +254 722785211 | Phone: +254 728634258 </p>
+        <p>James 1:27 states that pure and undefiled religion before God the Father is to care for orphans and widows in their distress and to keep oneself unstained by the world. </p>
+        <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+          <a href="https://www.facebook.com/YLAfrica/" target="_blank"><img src="src/facebook.png" alt="Facebook" width="30"></a>
+          <a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+          <a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+        </div>
+    </footer>
+  </footer>
+</body>
+</html>

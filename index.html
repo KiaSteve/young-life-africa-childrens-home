@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title img src="src/logo.png" alt="logo" class="logo" >Young Life Africa Children's Home</title>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <style>
+        .logo{
+    max-width:200px;
+        }
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+.logoheader{
+    display: flex;
+    width:50%;
+}
+        /* Body Styling */
+        body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+        /* Header Styling */
+        header {
+            background: #ffcc66,  #fda085;
+            font-size: 24px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            font-weight: 400;
+            
+            margin:0 20px 0 20px;
+
+        }
+        .headercontainer {
+            background:#f4f4f4;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            flex-direction:row;
+           
+            transition: background 0.3s;
+            vertical-align: top;
+        }
+        .headerbutton {
+            background: #f4f4f4;
+            color:black;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+            
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        .headerbutton:hover {
+            color: #0c8241;
+        }
+        /* Hero Section */
+        .hero {
+            background: url(src/image15.jpeg.jpg) no-repeat center center/cover;
+            display: flex;
+            flex-direction: vertical;
+            align-items: bottom;
+            justify-content: end;
+            color: white;
+            text-shadow: 2px 2px 16px rgb(0, 0, 0);
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            padding: 450px 50px 0 50px;
+            border-radius: 20px;
+        }
+
+        /* Container */
+        .container {
+            background: linear-gradient(135deg, #fda085 #f6d365, #fda085, #fda085, #f6d365);
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 60px 0;
+        }
+
+        /* Button Styling */
+        .button {
+            background: #ff6600;
+            color: white;
+            padding: 5px 15px 5px 15px;
+            text-decoration: none;
+            border-radius: 16px;
+            display: inline-block;
+            transition: background 0.3s;
+            margin-top: 10px;
+            font-size:15px !important;
+        }
+
+        .button:hover {
+            background: #e65c00;
+        }
+
+        /* Interactive Card */
+        .interactive-card {
+            background: #00679D;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-decoration: none;
+            color:white;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .interactive-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Projects Section */
+        .projects-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        /*
+        .Education {
+ background:url(IMG_2980.JPG);
+        }
+        .medical {
+ background:url(IMG_2980.JPG);
+        }
+        .projects {
+ background:url(IMG_2980.JPG);
+        }
+ */
+
+        .project-box1{
+    background : #00679D  #fda085 #f6d365;    
+    padding: 26px; /* Increased from 20px */
+    border-radius: 13px; /* Increased from 10px */
+    box-shadow: 0 5.2px 10.4px rgba(0,0,0,0.1); /* Increased from 0 4px 8px */
+    transition: transform 0.3s;
+    flex: 1;
+    margin: 14px; /* Increased from 10px */
+    min-width: 325px; /* Increased from 250px */
+    text-align: center;
+    color:black;
+}
+
+        .project-box1:hover {
+            transform: scale(1.05);
+            background-image:url(https://www.younglifeafricachildrenshome.org/src/WhatsApp\ Image\ 2025-04-02\ at\ 9.17.28\ AM.jpeg);
+        }
+        .project-box2 {
+    background :   #fda085 #f6d365 ;
+    padding: 26px; /* Increased from 20px */
+    border-radius: 13px; /* Increased from 10px */
+    box-shadow: 0 5.2px 10.4px rgba(0,0,0,0.1); /* Increased from 0 4px 8px */
+    transition: transform 0.3s;
+    flex: 1;
+    margin: 14px; /* Increased from 10px */
+    min-width: 325px; /* Increased from 250px */
+    text-align: center;
+    color:black;
+}
+
+        .project-box2:hover {
+            transform: scale(1.05);
+            background-image:url(https://www.younglifeafricachildrenshome.org/src/WhatsApp\ Image\ 2025-04-02\ at\ 9.17.28\ AM.jpeg);
+        }
+        .project-box3 {
+    background :  #fda085 #f6d365;;
+    padding: 26px; /* Increased from 20px */
+    border-radius: 13px; /* Increased from 10px */
+    box-shadow: 0 5.2px 10.4px rgba(0,0,0,0.1); /* Increased from 0 4px 8px */
+    transition: transform 0.3s;
+    flex: 1;
+    margin: 14px; /* Increased from 10px */
+    min-width: 325px; /* Increased from 250px */
+    text-align: center;
+    color:black;
+}
+
+        .project-box3:hover {
+            transform: scale(1.05);
+            background-image:url(https://www.younglifeafricachildrenshome.org/src/WhatsApp\ Image\ 2025-04-02\ at\ 9.17.28\ AM.jpeg);
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+a{
+    text-decoration-line: none;
+}
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .about-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      background:  #f6d365, #fda085  #fda085  #f6d365  #fda085,;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .about-header {
+      background: #00679D ;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .about-header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    /* Content Layout */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .text, .images {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    /* Image Styling */
+    .images img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      opacity: 1;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                font-size: 24px;
+                height: 200px;
+            }
+            .hero p{
+                display:none;
+            }
+            .logoheader .headercontainer
+            {display: flex;
+            flex-direction:row;}
+            
+
+            header {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert('Thank you for your support!');
+        }
+    </script>
+</head>
+<header> 
+    <div class="logoheader">
+        <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
+    </div>
+    <div class="headercontainer">
+    <a href="index.html#" class="headerbutton">Leadership</a>
+    <a href="success.html" class="headerbutton">Success Stories</a>
+    <a href="contact.html" class="headerbutton">Contact Us</a>
+    <a href="gallery.html" class="headerbutton">Gallery</a>
+
+</div>
+    <div>
+    <a href="howyoucanhelp.html" class="button">Get Involved</a>
+    </div>
+
+</header>
+<body>
+
+    <div class="hero">  <p>James 1:27 states that pure and undefiled religion before God the Father is to care for orphans and widows in their distress and to keep oneself unstained by the world. </p></div>
+   
+    <div class="about-container">
+        <div class="about-header">
+          <h1>About Us</h1>
+          <p>Our mission: A sanctuary of love, care, and hope for every child.</p>
+        </div>
+        <div class="content">
+            <div class="text">
+              <p>Welcome to our Children's Home, a sanctuary of love, care, and hope. Our journey began with a vision to provide a safe and nurturing environment for children in need. Over the years, we have grown into a community dedicated to transforming young lives by offering education, healthcare, and emotional support.</p>
+              <p>Every child deserves a loving home, and we strive to be that beacon of hope. Through the support of kind-hearted individuals, we continue to make a difference in the lives of many children.</p>
+              <p>
+                  Young life Africa children’s home and orphanage is a home that rescues, rehabilitates, accommodates, educates and feeds orphans and vulnerable children from society. It is located in Kenya, Ruiru district, behind Kenyatta university Ruiru campus.
+      
+      We target children from five to eighteen years. Currently the project has 40 children. Our ultimate goal is create responsible and fulfilled Christian adults out of the children in the project.
+      
+      The project was started in 2003 march 15th by Bishop Tonny Kamande In Huruma with sole objective of helping the disadvantage children living in the slum of Mathare, kambi-moto, Huruma; Kariobangi from all forms of bondage. Later the home was moved to Ruiru to a farm donated by a well-wisher.
+              </p>
+            </div>
+        <div class="images">
+            <img src="src/image35.jpg" alt="Children playing" >
+          </div>
+         
+      </div>
+        
+  </div>
+        </div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+          <div class="gallery-item">
+    <div class="container">
+
+
+        <a href ="talents.html">
+            <div class="section interactive-card">
+                <h2>Our programs</h2>
+                <p>See how talents a developed and nurtured here at our home.</p>
+            </div></a>
+    
+        <a href ="success.html">
+        <div class="section interactive-card">
+            <h2>Success Stories</h2>
+            <p>See the impact of our work through real-life stories of transformed lives.</p>
+        </div></a>
+
+        <!-- New Projects Section -->
+        <div class="projects-section">
+            <div class="project-box1">
+             <div class="Education"><h2>Education</h2>
+                <p>Details about education initiatives...</p>
+                <a href="education.html" class="button" >learn more...</a>
+             </div>
+            </div>
+            <div class="project-box2"><div class="medical">
+                <h2>Health & well-being</h2>
+                <p>Information on medical and rehabilitation programs...</p>
+                <a href="medical.html" class="button">learn more...</a>
+            </div>
+            </div>
+            
+            <div class="project-box3">
+                <div class="projects">
+                <h2>Other Projects</h2>
+                <p>Overview of other community projects...</p>
+                <a href="otherprojects.html" class="button">learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</div>
+    
+</div>
+    <footer>
+        <p>Contact Us | Email: younglifeafricachildrenhome@gmail.com | Phone: +254 737175170 </p>
+        <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+        <p>P.O Box 678-00100</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+      <a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
+      <a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+      <a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+            <p>&copy; 2003 Young Life Africa Children's Home. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
