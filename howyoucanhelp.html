@@ -20,6 +20,7 @@
 
         .logo {
             max-width: 200px;
+            height: auto;
         }
 
         /* Body Styling */
@@ -148,6 +149,7 @@
 
         .donation-method p {
             margin-bottom: 8px;
+            word-break: break-word;
         }
 
         .donation-method strong {
@@ -155,41 +157,24 @@
             width: 150px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .donate-details {
-                flex-direction: column;
-            }
+        #btc-address {
+            word-break: break-all;
+            font-size: 0.9em;
+        }
 
-            .donation-method {
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-            }
+        #copy-btc-btn {
+            margin-top: 8px;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            background: #005f73;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
 
-            .donation-method:last-child {
-                border-bottom: none;
-            }
-
-            .hero {
-                font-size: 24px;
-                height: 200px;
-            }
-
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-                font-size: 20px;
-            }
-
-            .headercontainer {
-                width: 100%;
-                justify-content: space-between;
-            }
-
-            .donation-method strong {
-                width: auto;
-                display: block;
-            }
+        #copy-btc-btn:hover {
+            background: #00495a;
         }
 
         footer {
@@ -319,6 +304,124 @@
 
         .social-icons img {
             display: block;
+        }
+
+        /* ===== Tablet & below ===== */
+        @media (max-width: 768px) {
+            .donate-details {
+                flex-direction: column;
+            }
+
+            .donation-method {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .donation-method:last-child {
+                border-bottom: none;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 20px;
+            }
+
+            .headercontainer {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .donation-method strong {
+                width: auto;
+                display: block;
+            }
+        }
+
+        /* ===== Phone screens: tighten everything so it fits comfortably ===== */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .logo {
+                max-width: 130px;
+            }
+
+            header {
+                margin: 0 0 10px 0;
+                gap: 6px;
+                font-size: 16px;
+            }
+
+            .headercontainer {
+                gap: 4px;
+            }
+
+            .headerbutton {
+                padding: 8px 6px;
+                font-size: 13px;
+            }
+
+            .button {
+                font-size: 13px !important;
+                padding: 6px 10px;
+            }
+
+            .donate-container {
+                margin: 10px auto;
+                border-radius: 8px;
+            }
+
+            .donate-header {
+                padding: 14px;
+            }
+
+            .donate-header h1 {
+                font-size: 1.4rem;
+            }
+
+            .donate-header p {
+                font-size: 0.95rem;
+            }
+
+            .donate-details {
+                padding: 10px;
+            }
+
+            .donation-method {
+                min-width: 100%;
+                padding: 14px 6px;
+            }
+
+            .donation-method h3 {
+                font-size: 1.05rem;
+            }
+
+            .donation-method p,
+            .instructions-content,
+            .btc-warning {
+                font-size: 0.9rem;
+            }
+
+            .alternative-notice {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            .bank-maintenance::after {
+                font-size: 14px;
+                padding: 8px 0;
+            }
+
+            footer {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+
+            footer p {
+                padding: 0 4px;
+            }
         }
     </style>
 </head>
@@ -452,10 +555,5 @@ function copyBTCAddress() {
 }
 </script>
 
-</body>
-</html>
-
-  </div>
-</footer>
 </body>
 </html>
