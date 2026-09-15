@@ -6,13 +6,7 @@
     <title>how you can help</title>
     <link rel="icon" type="image/x-icon" href="src/favicon.ico">
 
-    </head>
-<body>
     <style>
-              .logo{
-    max-width:200px;
-        }
-
         /* General Reset */
         * {
             box-sizing: border-box;
@@ -20,15 +14,25 @@
             padding: 0;
         }
 
+        html {
+            overflow-x: hidden;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
         /* Body Styling */
         body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    .button {
+            font-family: 'Poppins', sans-serif;
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .button {
             background: #ff6600;
             color: white;
             padding: 5px 10px 5px 10px;
@@ -37,7 +41,8 @@
             display: inline-block;
             transition: background 0.3s;
             margin-top: 10px;
-            font-size:15px !important;
+            font-size: 15px !important;
+            white-space: nowrap;
         }
 
         .button:hover {
@@ -48,130 +53,146 @@
         header {
             background: #fff;
             font-size: 24px;
-            display:flex;
-            flex-direction:row;
-            justify-content:space-between;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
             font-weight: 400;
-            
-            margin:0 20px 0 20px;
-
+            gap: 10px;
+            margin: 0 20px 0 20px;
         }
+
+        .logoheader {
+            flex-shrink: 0;
+        }
+
         .headercontainer {
-            background:#f4f4f4;
+            background: #f4f4f4;
             color: black;
             text-decoration: none;
             border-radius: 5px;
             display: flex;
-            flex-direction:row;
-           
+            flex-direction: row;
+            flex-wrap: wrap;
             transition: background 0.3s;
             vertical-align: top;
         }
+
         .headerbutton {
             background: #f4f4f4;
-            color:black;
+            color: black;
             padding: 10px 10px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
             transition: background 0.3s;
-            
             font-size: 15px;
             vertical-align: top;
+            white-space: nowrap;
         }
 
         .headerbutton:hover {
             color: #0c8241;
         }
-   
 
-   
-
-        * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    /* Donate Container */
-    .donate-container {
-      max-width: 1200px;
-      margin: 20px auto;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .donate-header {
-      background: #005f73;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .donate-header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-    }
-    .donate-details {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-    .donation-method {
-      flex: 1;
-      min-width: 280px;
-      padding: 20px;
-      border-right: 1px solid #ddd;
-    }
-    .donation-method:last-child {
-      border-right: none;
-    }
-    .donation-method h3 {
-      margin-bottom: 10px;
-      color: #005f73;
-    }
-    .donation-method p {
-      margin-bottom: 8px;
-    }
-    .donation-method strong {
-      display: inline-block;
-      width: 150px;
-    }
-    @media (max-width: 768px) {
-      .donate-details {
-        flex-direction: column;
-      }
-      .donation-method {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-      }
-      .donation-method:last-child {
-        border-bottom: none;
-      }
-    }
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .hero {
-            font-size: 24px;
-            height: 200px;
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
         }
 
-        header {
-            font-size: 20px;
+        /* Donate Container */
+        .donate-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-    }
-    footer {
+
+        .donate-header {
+            background: #005f73;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .donate-header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        .donate-details {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .donation-method {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .donation-method:last-child {
+            border-right: none;
+        }
+
+        .donation-method h3 {
+            margin-bottom: 10px;
+            color: #005f73;
+        }
+
+        .donation-method p {
+            margin-bottom: 8px;
+        }
+
+        .donation-method strong {
+            display: inline-block;
+            width: 150px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .donate-details {
+                flex-direction: column;
+            }
+
+            .donation-method {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .donation-method:last-child {
+                border-bottom: none;
+            }
+
+            .hero {
+                font-size: 24px;
+                height: 200px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 20px;
+            }
+
+            .headercontainer {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .donation-method strong {
+                width: auto;
+                display: block;
+            }
+        }
+
+        footer {
             background: #333;
             color: white;
             text-align: center;
@@ -179,181 +200,241 @@
             margin-top: 20px;
             border-radius: 20px;
         }
+
         /* Bitcoin instructions dropdown */
-.btc-instructions {
-    margin-top: 12px;
-    border-radius: 8px;
-    overflow: hidden;
-}
+        .btc-instructions {
+            margin-top: 12px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-.btc-instructions summary {
-    background: #ff6600;
-    color: white;
-    padding: 9px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-    list-style: none;
-    display: inline-block;
-}
+        .btc-instructions summary {
+            background: #ff6600;
+            color: white;
+            padding: 9px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            list-style: none;
+            display: inline-block;
+        }
 
-.btc-instructions summary:hover {
-    background: #e65c00;
-}
+        .btc-instructions summary:hover {
+            background: #e65c00;
+        }
 
-.btc-instructions summary::after {
-    content: " ▼";
-    font-size: 11px;
-}
+        .btc-instructions summary::after {
+            content: " ▼";
+            font-size: 11px;
+        }
 
-.btc-instructions[open] summary::after {
-    content: " ▲";
-}
+        .btc-instructions[open] summary::after {
+            content: " ▲";
+        }
 
-.instructions-content {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 0 0 8px 8px;
-    padding: 15px;
-    margin-top: 5px;
-    font-size: 14px;
-}
+        .instructions-content {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            padding: 15px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
 
-.instructions-content h4 {
-    color: #005f73;
-    margin: 10px 0 6px;
-}
+        .instructions-content h4 {
+            color: #005f73;
+            margin: 10px 0 6px;
+        }
 
-.instructions-content ol {
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
+        .instructions-content ol {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
 
-.instructions-content li {
-    margin-bottom: 6px;
-}
+        .instructions-content li {
+            margin-bottom: 6px;
+        }
 
-.btc-warning {
-    background: #fff3cd;
-    color: #664d03;
-    border-left: 4px solid #ffcc00;
-    padding: 10px;
-    margin-top: 12px;
-    border-radius: 4px;
-}
-/* Bank account maintenance overlay */
-.bank-maintenance {
-    position: relative;
-    overflow: hidden;
-}
+        .btc-warning {
+            background: #fff3cd;
+            color: #664d03;
+            border-left: 4px solid #ffcc00;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 4px;
+        }
 
-.bank-maintenance .bank-details-content {
-    filter: blur(3px);
-    opacity: 0.65;
-    user-select: none;
-    pointer-events: none;
-}
+        /* Bank account maintenance overlay */
+        .bank-maintenance {
+            position: relative;
+            overflow: hidden;
+        }
 
-.bank-maintenance::after {
-    content: "BANK ACCOUNTS UNDER MAINTENANCE";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    transform: translate(-50%, -50%) rotate(-18deg);
-    background: rgba(180, 0, 0, 0.88);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    z-index: 10;
-    pointer-events: none;
-}
-.alternative-notice {
-    flex-basis: 100%;
-    text-align: center;
-    background: #e8f5e9;
-    color: #0c8241;
-    font-weight: 600;
-    font-size: 17px;
-    padding: 12px;
-    margin: 0 0 10px 0;
-    border-radius: 8px;
-    border-left: 4px solid #0c8241;
-}
-</style>
-<header> 
-  <div class="logoheader">
-    <a href="index.html"> <img src="src/logo.png" alt="logo" class="logo" ></a>
-  </div>
-  <div class="headercontainer">
+        .bank-maintenance .bank-details-content {
+            filter: blur(3px);
+            opacity: 0.65;
+            user-select: none;
+            pointer-events: none;
+        }
 
-  <a href="success.html" class="headerbutton">Success Stories</a>
-  <a href="contact.html" class="headerbutton">Contact Us</a>
-  <a href="gallery.html" class="headerbutton">Gallery</a>
-</div>
-  <div>
-  <a href="howyoucanhelp.html" class="button">Get Involved</a>
-  </div>
+        .bank-maintenance::after {
+            content: "BANK ACCOUNTS UNDER MAINTENANCE";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120%;
+            transform: translate(-50%, -50%) rotate(-18deg);
+            background: rgba(180, 0, 0, 0.88);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            z-index: 10;
+            pointer-events: none;
+        }
 
+        .alternative-notice {
+            flex-basis: 100%;
+            text-align: center;
+            background: #e8f5e9;
+            color: #0c8241;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 12px;
+            margin: 0 0 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #0c8241;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .social-icons img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logoheader">
+        <a href="index.html"><img src="src/logo.png" alt="logo" class="logo"></a>
+    </div>
+    <div class="headercontainer">
+        <a href="success.html" class="headerbutton">Success Stories</a>
+        <a href="contact.html" class="headerbutton">Contact Us</a>
+        <a href="gallery.html" class="headerbutton">Gallery</a>
+    </div>
+    <div>
+        <a href="howyoucanhelp.html" class="button">Get Involved</a>
+    </div>
 </header>
+
 <div class="donate-container">
     <div class="donate-header">
-      <h1>Support Our Cause</h1>
-      <p>Your generous donations help us continue our mission to create a better future.</p>
+        <h1>Support Our Cause</h1>
+        <p>Your generous donations help us continue our mission to create a better future.</p>
     </div>
+
     <div class="donate-details">
-      <div class="donation-method bank-maintenance">
-    <div class="bank-details-content">
-        <h3>Bank Transfer</h3>
-        <p><strong>KSH Account Name:</strong> YoungLife Africa</p>
-        <p><strong>Bank:</strong> Stanbic Bank</p>
-        <p><strong>Account Number:</strong> 0100004032998</p>
-        <p><strong>SWIFT Code:</strong> SBICKENX</p>
-    </div>
-</div>
-      <div class="donate-details">
+
         <div class="donation-method bank-maintenance">
-    <div class="bank-details-content">
-        <h3>Bank Transfer</h3>
-        <p><strong>Dollar Account Name:</strong> YoungLife Africa</p>
-        <p><strong>Bank:</strong> Stanbic Bank</p>
-        <p><strong>Account Number:</strong> 010000013975</p>
-        <p><strong>SWIFT Code:</strong> SBICKENX</p>
+            <div class="bank-details-content">
+                <h3>Bank Transfer</h3>
+                <p><strong>KSH Account Name:</strong> YoungLife Africa</p>
+                <p><strong>Bank:</strong> Stanbic Bank</p>
+                <p><strong>Account Number:</strong> 0100004032998</p>
+                <p><strong>SWIFT Code:</strong> SBICKENX</p>
+            </div>
+        </div>
+
+        <div class="donation-method bank-maintenance">
+            <div class="bank-details-content">
+                <h3>Bank Transfer</h3>
+                <p><strong>Dollar Account Name:</strong> YoungLife Africa</p>
+                <p><strong>Bank:</strong> Stanbic Bank</p>
+                <p><strong>Account Number:</strong> 010000013975</p>
+                <p><strong>SWIFT Code:</strong> SBICKENX</p>
+            </div>
+        </div>
+
+        <div class="alternative-notice">
+            Use these other accounts, Thank you
+        </div>
+
+        <div class="donation-method">
+            <h3>Western union</h3>
+            <p><strong>Account name:</strong> CLEMENT NJOROGE</p>
+            <p><strong>Account Number:</strong> +254 737175170</p>
+            <p><strong>Location:</strong> Kenya, Nairobi</p>
+            <p><strong>Option:</strong> Mobile wallet</p>
+            <p><strong>Service provider:</strong> Airtel money</p>
+            <p><a href="https://www.westernunion.com/us/en/mobile-wallet.html" target="_blank">Get involved</a></p>
+        </div>
+
+        <div class="donation-method">
+            <h3>Trust Wallet</h3>
+            <p>
+                <strong>BTC Address:</strong>
+                <span id="btc-address">bc1quac8ynuwzxtftufujqerpdd0q32y37sd2uenky</span>
+            </p>
+            <button type="button" onclick="copyBTCAddress()" id="copy-btc-btn">
+                📋 Copy Address
+            </button>
+
+            <!-- Bitcoin transfer instructions dropdown -->
+            <details class="btc-instructions">
+                <summary>How to Buy &amp; Transfer BTC</summary>
+                <div class="instructions-content">
+                    <h4>How to buy Bitcoin</h4>
+                    <ol>
+                        <li>Open your preferred cryptocurrency exchange or app.</li>
+                        <li>Create an account and complete any required verification.</li>
+                        <li>Buy the amount of Bitcoin (BTC) you would like to donate.</li>
+                    </ol>
+
+                    <h4>How to transfer Bitcoin to our Trust Wallet</h4>
+                    <ol>
+                        <li>Open your crypto exchange or wallet and select <strong>Send</strong> or <strong>Withdraw</strong>.</li>
+                        <li>Select <strong>Bitcoin (BTC)</strong> as the cryptocurrency.</li>
+                        <li>Copy the BTC address shown above and paste it into the recipient/address field.</li>
+                        <li>Enter the amount of BTC you would like to donate.</li>
+                        <li>Carefully check that the address and network are correct before sending.</li>
+                        <li>Confirm the transaction and wait for the Bitcoin network to process it.</li>
+                    </ol>
+
+                    <p class="btc-warning">
+                        <strong>Important:</strong> Please send only Bitcoin (BTC) using the
+                        Bitcoin network to the BTC address above. Always double-check the
+                        address before confirming a transaction.
+                    </p>
+                </div>
+            </details>
+        </div>
+
     </div>
 </div>
-      
-      <div class="alternative-notice">
-    Use these other accounts, Thank you
-</div>
 
-<div class="donation-method">
-    <h3>Western union</h3>
-    <p><strong>Account name:</strong> CLEMENT NJOROGE</p>
-    <p><strong>Account Number:</strong> +254 737175170</p>
-    <p><strong>Location:</strong> Kenya, Nairobi</p>
-    <p><strong>Option:</strong> Mobile wallet</p>
-    <p><strong>Service provider:</strong> Airtel money</p>
-    <p><a href="https://www.westernunion.com/us/en/mobile-wallet.html" target="_blank">Get involved</a></p>
-  </p>
-</div>
-
-
-<div class="donation-method">
-    <h3>Trust Wallet</h3>
-
-    <p>
-        <strong>BTC Address:</strong>
-        <span id="btc-address">bc1quac8ynuwzxtftufujqerpdd0q32y37sd2uenky</span>
-    </p>
-
-    <button type="button" onclick="copyBTCAddress()" id="copy-btc-btn">
-        📋 Copy Address
-    </button>
-</div>
+<footer>
+    <p>Contact Us | Email: <a href="mailto:younglifeafricanchildrenhome@gmail.com">younglifeafricanchildrenhome@gmail.com</a> | Phone: +254 737175170</p>
+    <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
+    <p>P.O Box 678-00100</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
+        <a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
+        <a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
+        <a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
+    </div>
+    <p>&copy; 2003 Young Life Africa Children's Home. All rights reserved.</p>
+</footer>
 
 <script>
 function copyBTCAddress() {
@@ -362,7 +443,6 @@ function copyBTCAddress() {
 
     navigator.clipboard.writeText(address).then(() => {
         button.textContent = "✓ Copied!";
-
         setTimeout(() => {
             button.textContent = "📋 Copy Address";
         }, 2000);
@@ -372,50 +452,9 @@ function copyBTCAddress() {
 }
 </script>
 
-  </p>
+</body>
+</html>
 
-  <!-- Bitcoin transfer instructions dropdown -->
-  <details class="btc-instructions">
-    <summary>How to Buy & Transfer BTC</summary>
-
-    <div class="instructions-content">
-      <h4>How to buy Bitcoin</h4>
-      <ol>
-        <li>Open your preferred cryptocurrency exchange or app.</li>
-        <li>Create an account and complete any required verification.</li>
-        <li>Buy the amount of Bitcoin (BTC) you would like to donate.</li>
-      </ol>
-
-      <h4>How to transfer Bitcoin to our Trust Wallet</h4>
-      <ol>
-        <li>Open your crypto exchange or wallet and select <strong>Send</strong> or <strong>Withdraw</strong>.</li>
-        <li>Select <strong>Bitcoin (BTC)</strong> as the cryptocurrency.</li>
-        <li>Copy the BTC address shown above and paste it into the recipient/address field.</li>
-        <li>Enter the amount of BTC you would like to donate.</li>
-        <li>Carefully check that the address and network are correct before sending.</li>
-        <li>Confirm the transaction and wait for the Bitcoin network to process it.</li>
-      </ol>
-
-      <p class="btc-warning">
-        <strong>Important:</strong> Please send only Bitcoin (BTC) using the
-        Bitcoin network to the BTC address above. Always double-check the
-        address before confirming a transaction.
-      </p>
-    </div>
-  </details>
-</div>
-    </div>
-  </div>
-  <footer>
-<p>Contact Us | Email: <a href="mailto:younglifeafricanchildrenhome@gmail.com">younglifeafricanchildrenhome@gmail.com</a> | Phone: +254 737175170 </p>
-    <p>Young Life Africa Children's Home | Address : RXXG+W3J, Ruiru, Mugutha</p>
-    <p>P.O Box 678-00100</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/younglifeafricachildrenshome?igsh=ZjdsYWc0MDJyNHd2" target="_blank"><img src="src/instagram.png" alt="Instagram" width="30"></a>
-<a href="https://www.facebook.com/people/Younglife-Africa-Childrens-Home/61572991017417/?mibextid=wwXIfr&rdid=eTmn0EJjLYTFP4Sj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18gGBmfUmq%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/facebook.png" alt="facebook" width="30"></a>
-<a href="https://www.youtube.com/channel/UCEpbKpQF2KmKbzTdbmJVqYw" target="_blank"><img src="src/youtube.png" alt="youtube" width="30"></a>
-<a href="https://www.tiktok.com/@younglifeafrica?_t=ZM-8vCBpv6R19h&_r=1" target="_blank"><img src="src/tiktok.png" alt="Tiktok" width="30"></a>
-      <p>&copy; 2003 Young Life Africa Children's Home. All rights reserved.</p>
   </div>
 </footer>
 </body>
