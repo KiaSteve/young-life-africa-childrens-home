@@ -135,10 +135,31 @@
         }
 
         .donation-method {
-            flex: 1;
-            min-width: 280px;
+            flex: 1 1 280px;
+            min-width: 0;
             padding: 20px;
             border-right: 1px solid #ddd;
+            overflow-wrap: anywhere;
+        }
+
+        /* Keep wallet QR images centered, readable, and fully visible. */
+        .donation-method .wallet-image {
+            display: block;
+            width: min(100%, 320px);
+            height: auto;
+            max-height: 360px;
+            object-fit: contain;
+            object-position: center;
+            margin: 16px auto 0;
+            border-radius: 8px;
+        }
+
+        .donation-method img {
+            max-width: 100%;
+        }
+
+        .donation-method a {
+            overflow-wrap: anywhere;
         }
 
         .donation-method:last-child {
@@ -393,8 +414,14 @@
             }
 
             .donation-method {
-                min-width: 100%;
+                flex-basis: 100%;
+                min-width: 0;
                 padding: 14px 6px;
+            }
+
+            .donation-method .wallet-image {
+                width: min(100%, 280px);
+                max-height: 320px;
             }
 
             .donation-method h3 {
@@ -425,6 +452,8 @@
             footer p {
                 padding: 0 4px;
             }
+
+
         }
     </style>
 </head>
@@ -486,6 +515,20 @@
             <p><a href="https://www.westernunion.com/us/en/mobile-wallet.html" target="_blank">Get involved</a></p>
         </div>
 
+        
+<div class="donation-method">
+    <h3>Parrot Wallet</h3>
+
+    <p><strong>Account:</strong> USDT</p>
+
+    <img src="src/Image 2026.jpg"
+         alt="Parrot Wallet QR code"
+         class="wallet-image"
+         loading="lazy"
+         decoding="async">
+</div>
+
+
         <div class="donation-method">
             <h3>Trust Wallet</h3>
             <p>
@@ -543,18 +586,35 @@
 </footer>
 
 <script>
-function copyBTCAddress() {
-    const address = document.getElementById("btc-address").textContent.trim();
+async function copyBTCAddress() {
+    const addressElement = document.getElementById("btc-address");
     const button = document.getElementById("copy-btc-btn");
+    const address = addressElement.textContent.trim();
 
-    navigator.clipboard.writeText(address).then(() => {
+    try {
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(address);
+        } else {
+            const temporaryInput = document.createElement("textarea");
+            temporaryInput.value = address;
+            temporaryInput.setAttribute("readonly", "");
+            temporaryInput.style.position = "fixed";
+            temporaryInput.style.opacity = "0";
+            document.body.appendChild(temporaryInput);
+            temporaryInput.select();
+            const copied = document.execCommand("copy");
+            temporaryInput.remove();
+            if (!copied) throw new Error("Copy command failed");
+        }
+
+        const originalText = button.textContent;
         button.textContent = "✓ Copied!";
-        setTimeout(() => {
-            button.textContent = "📋 Copy Address";
+        window.setTimeout(() => {
+            button.textContent = originalText;
         }, 2000);
-    }).catch(() => {
-        alert("Unable to copy the BTC address.");
-    });
+    } catch (error) {
+        alert("Unable to copy automatically. Please select and copy the BTC address manually.");
+    }
 }
 </script>
 
